@@ -5,7 +5,7 @@ This is the official repository for VLAD (Vision-Language Attack Detection) as p
 
 VLAD is compatible with any action recognition model, and any implementation of CLIP can be used. In this official implementation, we use CSN from the PyTorchVideo library as the target action recognition model, and CLIP from the Huggingface Transformers package.
 
-In this official implementation, we demonstrate the score calculation proposed in VLAD. Scores are calculated for both clean videos and attacked videos. We use PGD-v as the adversarial attack. The expected behavior is that clean videos will have low scores, while attacked videos will have high scores. More details can be found in our [paper](https://arxiv.org/pdf/2404.10790).
+In this official implementation, we demonstrate the calculation of detection score proposed in VLAD. Detection scores are calculated for both clean videos and attacked videos. We use PGD-v as the adversarial attack. The expected behavior is that clean videos will have low scores, while attacked videos will have high scores. More details can be found in our [paper](https://arxiv.org/pdf/2404.10790).
 
 ## Installation
 
@@ -17,11 +17,23 @@ pip install -r requirements.txt
 
 ## Data
 
-Here we provide 8 example videos from Kinetics dataset where they can be directly used in our scripts.
+We provide 8 example videos from Kinetics dataset. They can be downloaded from the below link. Place them in ```\videos``` folder.
 
 Download link will be added soon.
 
 ## Usage
+
+```vlad.py``` function that calculates the detection score for a given video.
+
+```attacks.py``` has the implementation of PGD-v attack.
+
+```run_vlad.py``` reports the detection scores for a given video's clean and attacked versions.
+
+To calculate and report VLAD scores on all provided videos for the clean and attacked versions:
+
+```
+python run_vlad_all.py
+```
 
 
 ## Cite
