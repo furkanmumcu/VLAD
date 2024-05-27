@@ -34,6 +34,7 @@ To calculate and report VLAD scores on all provided videos for the clean and att
 ```
 python run_vlad_all.py
 ```
+Additionally, jupyter notebook version is provided in ```run_vlad_all.ipynb```.
 
 
 ## Cite
