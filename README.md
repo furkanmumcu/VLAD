@@ -17,9 +17,14 @@ pip install -r requirements.txt
 
 ## Data
 
-We provide 8 example videos from Kinetics dataset. They can be downloaded from the below link. Place them in ```\videos``` folder.
+We provide 8 example videos from Kinetics dataset. Namely: vid1, vid2, vid3, vid4 are from class 7 (arranging flowers); vid5, vid6, vid7, vid8 are from class 8 (assembling computer). To extract the videos follow these steps:
 
-Download link will be added soon.
+```
+cd videos
+tar -xf part1.tar.xz
+tar -xf part2.tar.xz
+```
+
 
 ## Usage
 
