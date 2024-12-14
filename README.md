@@ -5,7 +5,7 @@ This is the official repository for VLAD (Vision-Language Attack Detection) as p
 
 VLAD is compatible with any action recognition model, and any implementation of CLIP can be used. In this official implementation, we use CSN from the PyTorchVideo library as the target action recognition model, and CLIP from the Huggingface Transformers package.
 
-In this official implementation, we demonstrate the calculation of detection score proposed in VLAD. Detection scores are calculated for both clean videos and attacked videos. We use PGD-v as the adversarial attack. The expected behavior is that clean videos will have low scores, while attacked videos will have high scores. More details can be found in our [paper](https://arxiv.org/pdf/2404.10790).
+In this official implementation, we demonstrate the calculation of detection score proposed in VLAD. Detection scores are calculated for both clean videos and attacked videos. We use PGD-v as the adversarial attack. The expected behavior is that clean videos will have low scores, while attacked videos will have high scores. More details can be found in our [paper](https://openaccess.thecvf.com/content/CVPR2024W/AdvML/papers/Mumcu_Multimodal_Attack_Detection_for_Action_Recognition_Models_CVPRW_2024_paper.pdf).
 
 ## Installation
 
@@ -45,10 +45,11 @@ Additionally, jupyter notebook version is provided in ```run_vlad_all.ipynb```.
 ## Cite
 
 ```
-@article{mumcu2024multimodal,
+@inproceedings{mumcu2024multimodal,
   title={Multimodal Attack Detection for Action Recognition Models},
   author={Mumcu, Furkan and Yilmaz, Yasin},
-  journal={arXiv preprint arXiv:2404.10790},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2967--2976},
   year={2024}
 }
 ```
